@@ -17,17 +17,9 @@ template <typename T> T* sortir(T* arr, int size)
 
 int main()
 {
-    int size;
-    cout<<"Размер массива: ";
-    cin>>size;
-    int* arr=new int[size];
-    for(int i=0; i<size; i++) {
-        cout<<"arr["<<i<<"]=";
-        cin>>arr[i];
-    }
-    arr=sortir(arr,size);
-    for(int i=0; i<size; i++)
-        cout<<arr[i]<<endl;
-    delete[] arr;
+    int arr[5]={12,14,-422,821,0};
+    double mass[3]={12.1,34.6,-74.2};
+    sortir(arr,5);
+    sortir(mass,3);
     return 0;
 }
