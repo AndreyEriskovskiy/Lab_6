@@ -11,8 +11,8 @@ template <typename T> T* sortir(T* arr, int size)
             i=0;
         }
     }
-    return arr;
-       
+    for(int i=0;i<size;i++)
+        cout<<arr[i]<<endl;    
 }
 
 int main()
