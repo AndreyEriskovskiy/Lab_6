@@ -33,7 +33,7 @@ superlong<N>::superlong(const string& s)
 {
     try {
         if(Hex(s)==false)
-            throw invalid_argument(string("Число ")+s+string(" не шестнадцатеричное число"));
+            throw invalid_argument("Ошибка "+s+" не шестнадцатеричное число");
     } catch(const invalid_argument& e) {
         cerr<<e.what()<<endl;
     }
