@@ -36,6 +36,7 @@ superlong<N>::superlong(const string& s)
             throw invalid_argument("Ошибка "+s+" не шестнадцатеричное число");
     } catch(const invalid_argument& e) {
         cerr<<e.what()<<endl;
+        exit(1);
     }
     value= {0};
     int i = 0;
