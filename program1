@@ -20,6 +20,7 @@ int main()
     int arr[5]={12,14,-422,821,0};
     double mass[3]={12.1,34.6,-74.2};
     sortir(arr,5);
+    cout<<endl;
     sortir(mass,3);
     return 0;
 }
