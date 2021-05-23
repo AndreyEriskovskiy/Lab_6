@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+template <typename T> T* sortir(T* arr, int size)
+{
+    T p=0;
+    for(int i=1;i<size;i++) {
+        if(arr[i-1]>arr[i]) {
+            p=arr[i-1];
+            arr[i-1]=arr[i];
+            arr[i]=p;
+            i=0;
+        }
+    }
+    return arr;
+       
+}
+
+int main()
+{
+    int size;
+    cout<<"Размер массива: ";
+    cin>>size;
+    int* arr=new int[size];
+    for(int i=0; i<size; i++) {
+        cout<<"arr["<<i<<"]=";
+        cin>>arr[i];
+    }
+    arr=sortir(arr,size);
+    for(int i=0; i<size; i++)
+        cout<<arr[i]<<endl;
+    delete[] arr;
+    return 0;
+}
